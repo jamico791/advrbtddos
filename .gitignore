@@ -1,1 +1,5 @@
+# Dataset folder
 ddos_dataset/
+
+# byte-compiled
+__pycache__/
