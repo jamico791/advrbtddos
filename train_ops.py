@@ -19,7 +19,7 @@ from ignite.contrib.handlers import ProgressBar
 
 from advertorch.context import ctx_noparamgrad_and_eval
 
-from pytorch_memlab import MemReporter
+# from pytorch_memlab import MemReporter
 
 from utils import (create_summary_writer,
                    log_results,
@@ -127,8 +127,8 @@ def run_trainer(data_loader: dict,
 
   # reporter to identify memory usage
   # bottlenecks throughout network
-  reporter = MemReporter()
-  print_model(model, reporter)
+  # reporter = MemReporter()
+  # print_model(model, reporter)
 
   # set up tensorboard summary writer
   writer = create_summary_writer(model,
