@@ -23,7 +23,7 @@ from advertorch.context import ctx_noparamgrad_and_eval
 
 from utils import (create_summary_writer,
                    log_results,
-                   print_model)
+                   )
 
 
 def run_trainer(data_loader: dict,
