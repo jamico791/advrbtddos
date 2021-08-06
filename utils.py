@@ -20,7 +20,7 @@ from torch.utils.data import DataLoader
 import torchvision
 import torchvision.transforms as transforms
 
-import pytorch_memlab
+# import pytorch_memlab
 
 
 ###############
@@ -48,18 +48,18 @@ def to_device(device: str, t: torch.Tensor, convert_to_np: bool=False):
     return t.to(device)
 
 
-def print_model(model: nn.Module, reporter: pytorch_memlab.MemReporter) -> None:
-  """
-  print model memory usage by layer
-  Parameters
-  ----------
-  model: nn.Module
-  the torch model
-  """
-  print('=== model definition ===')
-  print(model)
-  print('=== model memory usage===')
-  reporter.report()
+# def print_model(model: nn.Module, reporter: pytorch_memlab.MemReporter) -> None:
+#   """
+#   print model memory usage by layer
+#   Parameters
+#   ----------
+#   model: nn.Module
+#   the torch model
+#   """
+#   print('=== model definition ===')
+#   print(model)
+#   print('=== model memory usage===')
+#   reporter.report()
 
 
 ###############
