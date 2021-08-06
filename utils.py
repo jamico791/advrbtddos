@@ -7,7 +7,7 @@ import yaml
 import numpy as np
 
 from typing import List
-from tensorboardX import SummaryWriter
+from torch.utils.tensorboard import SummaryWriter
 from sklearn.metrics import (precision_score,
                recall_score,
                accuracy_score,
