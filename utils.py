@@ -83,7 +83,7 @@ def create_summary_writer(model: nn.Module,
   ----------
   tensorboardX summary writer
   """
-  writer = SummaryWriter(logdir=tb_summaries_dir)
+  writer = SummaryWriter(log_dir=tb_summaries_dir)
 # data_loader_iter = iter(data_loader)
 # x, _ = next(data_loader_iter)
 # try:
